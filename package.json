@@ -18,7 +18,7 @@
 		"watch": "npm-run-all --parallel watch:*",
 		"watch:css": "onchange 'app/styles/*' -- npm run build:css",
 		"watch:scripts": "watch 'npm run build:scripts' 'app/scripts'",
-		"postinstall": "npm run watch:all",
+		"postinstall": "npm run watch",
 		"minify:browserify": "browserify app/scripts/index.js -o dist/scripts/index.js  -d -t [ babelify ] -p [minifyify --map dist/scripts/index.map.json --output dist/scripts/index.map.json]"
 	},
 	"babel": {

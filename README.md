@@ -1,11 +1,11 @@
-This is my personal portfolio
+## This is my personal portfolio
 
-## Run the app
+## In order to run the app, please follow the steps below:
 
-0. ```npm run install```
-0. ```npm run serve```
+1. ```npm install```
+2. ```npm run serve```
 
-http://localhost:3000/ 
+3. It will automaticaly open the following url inside your browser: http://localhost:3000/
 
 ## Build the app
 ```npm run build:all```
