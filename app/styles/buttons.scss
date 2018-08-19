@@ -1,0 +1,72 @@
+.button {
+  background-color: #303030;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 24px;;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.back-to-top {
+  position: absolute;
+  top: -25px;
+  background: $light-blue;
+  font-size: 25pt;
+  color: #fff;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: background .5s;
+  cursor: pointer;
+
+  &::before {
+    content: "\f106";
+  }
+}
+
+.icon {
+  overflow: hidden;
+  transition: background 0.3s, color 0.3s, transform 0.3s;
+  width: 55px;
+  height: 55px;
+  position: relative;
+  text-align: center;
+  background: $dark-grey;
+  font-size: 18pt;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  .fab {
+    color: #fff;
+  }
+
+  &:hover {
+    background: rgba(0, 156, 180, 0.7);
+  }
+}
+
+.submit {
+  max-width: 100%;
+  font-size: 12pt;
+  padding: 10px 30px;
+  color: #fff;
+  background: transparent;
+  outline: 0;
+  font-family: 'Comfortaa', cursive;
+  border: 2px solid $light-blue;
+
+  @media only screen and (min-width: 640px) {
+    max-width: 50%;
+  }
+}

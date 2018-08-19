@@ -1,0 +1,43 @@
+.footer {
+  background: $dark-blue;
+  padding: 70px 0 20px 0;
+  position: relative;
+
+  a {
+    color: $light-blue;
+    text-decoration: none;
+
+    &:visited {
+      color: $light-blue;
+    }
+
+    &:active {
+      color: $ocean-blue;
+    }
+  }
+}
+
+.icon-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.footnote {
+  font-size: 10pt;
+  color: $light-grey;
+  padding-top: 5px;
+  opacity: 0.6;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.highlight {
+  color: $light-blue;
+}
+
+.info-box {
+  padding-top: 20px;
+}

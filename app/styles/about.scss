@@ -1,0 +1,154 @@
+.about-section {
+  h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    color: #fff;
+  }
+
+  p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    color: #000;
+    line-height: 1.5;
+    max-width: 80%;
+    margin: 20px auto;
+  }
+  margin-top: 79px;
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 100px;
+  }
+}
+
+.avatar {
+  margin: 0 auto;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: block;
+}
+
+.article {
+  padding: 0 15px 0 15px;
+
+  &--skills {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.box {
+  display: grid;
+  grid-template-columns: 100%;
+
+  @media only screen and (min-width: 640px) {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+/* ===== SKILLS Section ===== */
+.skill-bars {
+	list-style: none;
+  overflow: hidden;
+  width: 100%;
+
+  li {
+    height: 1.2rem;
+    background:#eee;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    position: relative;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 10px;
+    line-height: 1.4rem;
+    padding: 0 10px;
+    height: 100%;
+  }
+}
+
+.progress {
+  background: $light-blue;
+  position: relative;
+  height: 100%;
+  width: 0%;
+  transition: all 0.5s linear;
+
+  &__label {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    color: #666;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 10px;
+    line-height: 1.4rem;
+  }
+
+  &--50 {
+    width: 50%;
+  }
+
+  &--60 {
+    width: 60%;
+  }
+
+  &--70 {
+    width: 70%;
+  }
+
+  &--80 {
+    width: 80%;
+  }
+
+  &--90 {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: 640px) {
+    &--50, &--60, &--70, &--80, &--90 {
+      width: 0;
+    }
+  }
+
+}
+
+.skill-bars--animated {
+  .progress {
+    &--50 {
+      width: 50%;
+    }
+
+    &--60 {
+      width: 60%;
+    }
+
+    &--70 {
+      width: 70%;
+    }
+
+    &--80 {
+      width: 80%;
+    }
+
+    &--90 {
+      width: 90%;
+    }
+  }
+}

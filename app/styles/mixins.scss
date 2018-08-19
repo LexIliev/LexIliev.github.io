@@ -1,0 +1,35 @@
+$default-text-shadow-x: 1px;
+$default-text-shadow-y: 1px;
+$default-text-shadow-blur: 1px;
+$default-text-shadow-color: #000;
+
+@mixin effect-3d($x, $y, $blur, $offset) {
+	text-shadow: $default-text-shadow-x $default-text-shadow-y
+				 $default-text-shadow-blur $default-text-shadow-color,
+				 $default-text-shadow-x $default-text-shadow-y
+				 $default-text-shadow-blur $default-text-shadow-color,
+				 $x $y $blur #f00, ($x + $offset) ($y + $offset) $blur #0cf;
+}
+
+@mixin default-text-shadow() {
+	text-shadow: $default-text-shadow-x $default-text-shadow-y
+				 $default-text-shadow-blur $default-text-shadow-color,
+				 $default-text-shadow-x $default-text-shadow-y
+				 $default-text-shadow-blur $default-text-shadow-color;
+}
+
+@mixin reset-text-shadow() {
+	text-shadow: 0 0 0 rgba(255, 255, 255, 0.3),
+				 0 0 0 rgba(255, 255, 255, 0.3);
+}
+
+@mixin outline() {
+	text-shadow: (-$default-text-shadow-x) (-$default-text-shadow-y)
+				 $default-text-shadow-blur $default-text-shadow-color,
+				 $default-text-shadow-x (-$default-text-shadow-y)
+				 $default-text-shadow-blur $default-text-shadow-color,
+				 (-$default-text-shadow-x) $default-text-shadow-y
+				 $default-text-shadow-blur $default-text-shadow-color,
+				 $default-text-shadow-x $default-text-shadow-y
+				 $default-text-shadow-blur $default-text-shadow-color;
+}

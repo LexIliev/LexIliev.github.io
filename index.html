@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alex Iliev | Front-end Developer</title>
+	<!-- Utilities -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+	<!-- Page Styling -->
+	<link href="dist/styles/index.css" rel="stylesheet">
+	<!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="dist/images/favicon.ico"/>
+</head>
+<body id="home">
+	<!-- HEADER -->
+	<header class="header">
+    <div class="header-container">
+      <div class="header-container__background"></div>
+			<h2 class="heading heading--white heading--default-text-shadow">Hello! I'm Alex Iliev</h2>
+      <h2 class="heading heading--default-text-shadow heading__sub">Front End Developer</h2>
+    </div>
+	</header>
+	<!-- End of HEADER -->
+
+	<!-- NAVIGATION -->
+  <nav class="navigation-bar" id="navigation">
+    <!-- HAMBURGER Menu -->
+    <div class="hamburger" id="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <!-- End of HAMBURGER Menu -->
+
+    <!-- NAVIGATION Container -->
+    <div class="container navigation" id="navigation-wrapper">
+      <a href="#home" data-scroll="home" class="navigation__button">Home</a>
+      <a href="#about" data-scroll="about" class="navigation__button">About</a>
+      <a href="#special" data-scroll="special" class="navigation__button">Skills</a>
+      <a href="#home" data-scroll="home" class="navigation__button logo"><img class="logo-image" src="dist/images/logo-small.png" alt="Logo"></a>
+      <a href="#projects" data-scroll="projects" class="navigation__button">Projects</a>
+      <a href="#experience" data-scroll="experience" class="navigation__button">Experience</a>
+      <a href="#contacts" data-scroll="contacts" class="navigation__button">Contacts</a>
+    </div>
+    <!-- End of NAVIGATION Container -->
+  </nav>
+  <!-- End of NAVIGATION -->
+
+  <!-- ABOUT Section -->
+  <section class="about-section section section--white" id="about">
+  	<div class="container">
+  		<h2 class="heading animate">About Me</h2>
+      <div class="box">
+        <article class="article">
+          <img class="avatar" src="dist/images/avatar.jpg" alt="Avatar">
+          <p>Hello! My name is Alex Iliev. I'm a front-end developer, who loves all kinds of tech!</p>
+        </article>
+
+        <article class="article article--skills">
+          <ul class="skill-bars" id="bars">
+            <li>
+              <div class="progress progress--90">
+              </div>
+              <span class="progress__label">90%</span>
+              <strong class="skill-bars__label">HTML5</strong>
+            </li>
+            <li>
+              <div class="progress progress--70">
+              </div>
+              <span class="progress__label">70%</span>
+              <strong class="skill-bars__label">CSS3</strong>
+            </li>
+            <li>
+              <div class="progress progress--70">
+              </div>
+              <span class="progress__label">70%</span>
+              <strong class="skill-bars__label">JavaScript</strong>
+            </li>
+            <li>
+              <div class="progress progress--70">
+              </div>
+              <span class="progress__label">70%</span>
+              <strong class="skill-bars__label">React Native</strong>
+            </li>
+            <li>
+              <div class="progress progress--80">
+              </div>
+              <span class="progress__label">80%</span>
+              <strong class="skill-bars__label">CreateJS</strong>
+            </li>
+            <li>
+              <div class="progress progress--70">
+              </div>
+              <span class="progress__label">70%</span>
+              <strong class="skill-bars__label">Photoshop</strong>
+            </li>
+            <li>
+              <div class="progress progress--50">
+              </div>
+              <span class="progress__label">50%</span>
+              <strong class="skill-bars__label">Grunt</strong>
+            </li>
+            <li>
+              <div class="progress progress--50">
+              </div>
+              <span class="progress__label">50%</span>
+              <strong class="skill-bars__label">Webpack</strong>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- END of ABOUT section -->
+
+  <!-- SPECIAL SKILLS Section -->
+  <section id="special" class="special-skills section section--dark-blue">
+    <div class="container">
+      <h2 class="heading heading--white animate">Special Skills</h2>
+        <div class="special-skills__wrapper" id="skills-wrapper">
+          <div class="special-skills__box special-skills__box--fade-in-left">
+            <div class="special-skills__figure">
+              <i class="special-skills__icon fas fa-search"></i>
+            </div>
+            <h2 class="heading--skills">Detail Orientation</h2>
+          </div>
+
+          <div class="special-skills__box special-skills__box--fade-in-top">
+            <div class="special-skills__figure">
+              <i class="special-skills__icon fas fa-users"></i>
+            </div>
+            <h2 class="heading--skills">Team Collaboration and Communication</h2>
+          </div>
+
+          <div class="special-skills__box special-skills__box--fade-in-right">
+            <div class="special-skills__figure">
+              <i class="special-skills__icon fas fa-desktop"></i>
+            </div>
+            <h2 class="heading--skills">Passionate About Technologies</h2>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- END of SPECIAL SKILLS Section -->
+
+	<!-- PROJECTS Section -->
+	<section id="projects" class="section section--background">
+		<div class="container">
+      <h2 class="heading heading--white-outlined animate">Projects</h2>
+			<div class="projects-wrapper">
+        <figure class="project">
+          <span>
+            <img class="project__image" src="./dist/images/game-console-15.svg" alt="Horse Racing Apps">
+          </span>
+          <div class="project__description">
+            <h2 class="project--bold">React Native Horse Racing Apps</h2>
+            <p>Applications for global horse racing and breeding teams with exclusive content, latest news, analysis and reviews.</p>
+          </div>
+        </figure>
+
+        <figure class="project">
+          <span>
+            <img class="project__image" src="./dist/images/computing.svg" alt="Lottery Games">
+          </span>
+          <div class="project__description">
+            <h2 class="project--bold">Various Lottery Projects</h2>
+            <p>Games, based on revealing a numbers and matching them to a winning prize combinations. Created with CreateJS and Canvas.</p>
+          </div>
+        </figure>
+
+        <figure class="project">
+          <a href="http://portal.mobilewaves.com/games/gdk-games/game-instantlotto/index.html" target="_blank">
+            <img class="project__image" src="./dist/images/game-control.svg" alt="Instant Lottery Game">
+          </a>
+          <div class="project__description">
+            <h2 class="project--bold">Instant Lottery Game</h2>
+            <p>A game of chance with different winning combinations, created with HTML5, CSS3 and JavaScript.</p>
+          </div>
+        </figure>
+
+				<figure class="project">
+          <a href="http://portal.mobilewaves.com/games/gdk-games/game-kenomini/index.html" target="_blank">
+            <img class="project__image" src="./dist/images/knight.svg" alt="Lottery-like Gambling Game">
+          </a>
+          <div class="project__description">
+            <h2 class="project--bold">Lottery-like Gambling Game</h2>
+            <p>Choose a combination of numbers, match them throughout a grid and win a prize. Created with HTML5, CSS3 and JavaScript.</p>
+          </div>
+				</figure>
+
+				<figure class="project">
+          <a href="http://portal.mobilewaves.com/games/gdk-games/game-keno-multiplier/index.html" target="_blank">
+            <img class="project__image" src="./dist/images/pacman.svg" alt="Gambling Game with Multiplier">
+          </a>
+          <div class="project__description">
+            <h2 class="project--bold">Lottery-like Gambling Game with Multiplier</h2>
+            <p>Grid-based game with winning combinations, created with HTML5, CSS3 and JavaScript.</p>
+          </div>
+				</figure>
+
+				<figure class="project">
+          <a href="http://portal.mobilewaves.com/games/gdk-games/game-lemagot/index.html" target="_blank">
+            <img class="project__image" src="./dist/images/game-console-1.svg" alt="Game with Combinations">
+          </a>
+          <div class="project__description">
+            <h2 class="project--bold">Lottery-based Game with Combinations</h2>
+            <p>Reveal the numbers from predefined combination in order to win a hidden prize. The game is created with HTML5, CSS3 and JavaScript.</p>
+          </div>
+				</figure>
+
+				<figure class="project">
+          <a href="http://portal.mobilewaves.com/games/gdk-games/game-solo/index.html" target="_blank">
+            <img class="project__image" src="./dist/images/rocket-ship-launch.svg" alt="Quick-to-Play Game">
+          </a>
+          <div class="project__description">
+            <h2 class="project--bold">Quick-to-Play Game with Instant Winnings</h2>
+            <p>The game is created with HTML5, CSS3 and JavaScript.</p>
+          </div>
+        </figure>
+
+        <figure class="project">
+          <a href="http://portal.mobilewaves.com/games/gdk-games/game-treasuretripler/index.html" target="_blank">
+            <img class="project__image" src="./dist/images/game-controller.svg" alt="Scratch Card Type Game">
+          </a>
+          <div class="project__description">
+            <h2 class="project--bold">Lottery Scratch Card Type Game</h2>
+            <p>Open a number of identical symbols to win a prize. The game is created with HTML5, CSS3 and JavaScript.</p>
+          </div>
+        </figure>
+
+        <figure class="project">
+          <a href="http://portal.mobilewaves.com/games/gdk-games/game-bingo9/index.html" target="_blank">
+            <img class="project__image" src="./dist/images/gamer-2.svg" alt="A Game of Chance">
+          </a>
+          <div class="project__description">
+            <h2 class="project--bold">A Game of Chance</h2>
+            <p>The game is created with HTML5, CSS3 and JavaScript.</p>
+          </div>
+        </figure>
+			</div>
+		</div>
+	</section>
+	<!-- End of PROJECTS Section -->
+
+	<!-- TIMELINE Section -->
+  <section class="section section--white" id="experience">
+    <div class="container">
+      <h2 class="heading animate">Work & Education</h2>
+
+      <div class="timeline-wrapper">
+        <div class="timeline">
+          <div class="timeline__icon animate">
+            <i class="fas fa-briefcase"></i>
+          </div>
+
+          <div class="timeline__content">
+            <h3 class="timeline__position">Front-end Developer</h3>
+            <p class="timeline__text">August 2016 - Present</p>
+
+            <div class="timeline__company">
+                <h4>Mobile Wave Solutions</h4>
+                <a class="timeline__link" href="http://www.mobilewaves.com" target="_blank">www.mobilewaves.com</a>
+            </div>
+            <ul class="timeline__text">
+              <h5>Accomplishments</h5>
+              <li>Worked on cross-platform mobile apps with React Native.</li>
+              <li>Worked on high-quality, multi-device, web-based games.</li>
+              <li>Trained and mentored junior programmers in programming methodologies and best practices.</li>
+              <li>Collaborate with designers to create clean interfaces and intuitive interactions and experiences.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__icon animate">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+
+          <div class="timeline__content">
+            <h3 class="timeline__position">Bachelore Degree</h3>
+            <p class="timeline__text">November 2013 - Present</p>
+
+            <h4 class="timeline__company">New Bulgarian University</h4>
+            <p class="timeline__text">Information Technologies with Specialization in Computer Games Technologies</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__icon animate">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+
+          <div class="timeline__content">
+            <h3 class="timeline__position">Web Development</h3>
+            <p class="timeline__text">April 2016 - February 2017</p>
+
+            <h4 class="timeline__company">Licensed Learning Center "Net It" LTD</h4>
+            <ul class="timeline__text">
+              <li>Web design, UX, and server basics.</li>
+              <li>Front-end Development.</li>
+              <li>Introduction to Back-end Web Development with PHP and MySQL.</li>
+              <li>Programming with AJAX, JSON, and AngularJS.</li>
+              <li>Building website with CMS.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__icon animate">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+
+          <div class="timeline__content">
+            <h3 class="timeline__position">Economic Information Provision</h3>
+            <p class="timeline__text">September 2008 - June 2013</p>
+
+            <h4 class="timeline__company">Financial Bussiness School "Vasil Levski"</h4>
+            <p class="timeline__text">High School Degree</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of TIMELINE Section -->
+
+	<!-- CONTACTS Section -->
+	<section class="section section--grey" id="contacts">
+		<div class="container">
+      <h2 class="heading heading--white animate">Contacts</h2>
+			<div class="contacts-wrapper" id="wrapper">
+				<div class="contacts-wrapper__box contacts-wrapper__box--fade-in-left">
+				<h3 class="heading heading--white heading--smaller">Get in touch with me</h3>
+				<p class="contacts-wrapper__text">
+					Those are the main places on which you can reach out to me.
+				</p>
+
+        <p class="contacts-wrapper__text">
+          <i class="fas fa-map-marker contacts-wrapper__icon"></i>
+          <span>Sofia, Bulgaria</span>
+        </p>
+        <p class="contacts-wrapper__text">
+          <i class="fas fa-envelope contacts-wrapper__icon"></i>
+          <span>aalex.iliev@gmail.com</span>
+        </p>
+			</div>
+
+      <!-- CONTACTS Form -->
+			<div class="contacts-wrapper__box contacts-wrapper__box--fade-in-right">
+				<h3 class="heading heading--white heading--smaller contacts-title">Drop me a line</h3>
+				<form method="POST" role="form" class="form" id="contact-form">
+          <input type="text" name="name" class="input" placeholder="Enter your name *" required>
+          <input type="email" name="email" class="input" placeholder="Enter your email *" required>
+          <input type="text" name="subject" class="input" placeholder="Enter subject *" required>
+          <textarea name="message" class="input input__message" placeholder="Enter your message... *" required></textarea>
+          <button type="submit" class="submit">Send</button>
+				</form>
+      </div>
+      <!-- End of CONTACTS Form -->
+      </div>
+    </div>
+	</section>
+	<!-- End of CONTACTS Section -->
+
+	<!-- FOOTER Section -->
+  <footer class="footer">
+    <!-- Back-to-Top Button -->
+    <a href="#home" data-scroll="home" id="back-to-top"><i class="back-to-top fas fa-angle-up"></i></a>
+
+    <!-- SOCIAL MEDIA Buttons -->
+    <div class="icon-wrap">
+      <a class="icon" href="https://www.linkedin.com/in/alex-iliev-84a831144/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a class="icon" href="https://www.instagram.com/alx.iliev">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a class="icon" href="https://github.com/LexIliev">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- End of SOCIAL MEDIA Buttons -->
+
+    <!-- ATTRIBUTE Section -->
+    <div class="info-box">
+      <div class="footnote">
+        Project's Icons are designed by
+        <span class="highlight"><a href="https://www.flaticon.com/authors/freepik" target="_blank">Freepik</a></span>
+        from
+        <span class="highlight"><a href="https://www.flaticon.com/" target="_blank">Flaticon</a></span>
+      </div>
+      <div class="footnote">
+        Project's Image is designed by
+        <span class="hightlight"><a href="http://www.freepik.com" target="_blank">Vectorpocket / Freepik</a></span>
+      </div>
+      <div class="footnote">ALEX ILIEV
+        <span class="highlight">©2018</span>
+      </div>
+    </div>
+    <!-- End of ATTRIBUTE Section -->
+  </footer>
+  <!-- End of FOOTER Area -->
+
+	<!-- Page Scripts -->
+	<script type="text/javascript" src="dist/scripts/index.js"></script>
+</body>
+</html>
