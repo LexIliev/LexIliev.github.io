@@ -43,8 +43,11 @@
     font-size: 2px;
   }
 
-  @media only screen and (min-width: 770px) {
+  @media only screen and (min-width: 640px) {
     opacity: 0;
+  }
+
+  @media only screen and (min-width: 770px) {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     -webkit-animation-fill-mode: both;
