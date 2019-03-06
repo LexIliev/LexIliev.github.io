@@ -1,19 +1,23 @@
-"use strict";
+'use strict';
 
-import SmoothScroll from "./SmoothScroll";
+import SmoothScroll from './SmoothScroll';
 
 document.body.onload = (function() {
+	const copyright = document.getElementById('copyright');
+
+	copyright.innerText = `©${new Date().getFullYear()}`;
+
 	// Navigation Bar
-	const navbar = document.getElementById("navigation");
+	const navbar = document.getElementById('navigation');
 	const posY = navbar.offsetTop;
 
 	// Back to Top button and listener
-	const backToTop = document.getElementById("back-to-top");
+	const backToTop = document.getElementById('back-to-top');
 
-	backToTop.addEventListener("click", function(e) {
+	backToTop.addEventListener('click', function(e) {
 		e.preventDefault();
 
-		const targetId = backToTop.getAttribute("data-scroll");
+		const targetId = backToTop.getAttribute('data-scroll');
 		new SmoothScroll().scrollTo(targetId);
 	});
 
@@ -22,38 +26,38 @@ document.body.onload = (function() {
 		const scrollTop = window.pageYOffset;
 
 		if (scrollTop > posY) {
-			navbar.classList.add("sticky");
+			navbar.classList.add('sticky');
 		} else if (scrollTop <= posY) {
-			navbar.classList.remove("sticky");
+			navbar.classList.remove('sticky');
 		}
 	};
 
 	// Contact Form Email Encryption
-	const contactForm = document.getElementById("contact-form");
+	const contactForm = document.getElementById('contact-form');
 	contactForm.setAttribute(
-		"action",
-		"//formspree.io/" + "aalex.iliev" + "@" + "gmail" + "." + "com"
+		'action',
+		'//formspree.io/' + 'aalex.iliev' + '@' + 'gmail' + '.' + 'com',
 	);
 
 	// Hamburger Menu
-	const hamburgerMenu = document.getElementById("hamburger-menu");
-	const navigationWrapper = document.getElementById("navigation-wrapper");
+	const hamburgerMenu = document.getElementById('hamburger-menu');
+	const navigationWrapper = document.getElementById('navigation-wrapper');
 
-	hamburgerMenu.addEventListener("click", () => {
-		hamburgerMenu.classList.toggle("hamburger--open");
-		navigationWrapper.classList.toggle("navigation--open");
+	hamburgerMenu.addEventListener('click', () => {
+		hamburgerMenu.classList.toggle('hamburger--open');
+		navigationWrapper.classList.toggle('navigation--open');
 	});
 
-	navigationWrapper.addEventListener("click", event => {
+	navigationWrapper.addEventListener('click', (event) => {
 		event.preventDefault();
 		const eventNode = event.target.nodeName.toUpperCase();
 
-		if (eventNode === "A") {
-			const targetId = event.target.getAttribute("data-scroll");
+		if (eventNode === 'A') {
+			const targetId = event.target.getAttribute('data-scroll');
 			new SmoothScroll().scrollTo(targetId);
 
-			hamburgerMenu.classList.toggle("hamburger--open");
-			navigationWrapper.classList.toggle("navigation--open");
+			hamburgerMenu.classList.toggle('hamburger--open');
+			navigationWrapper.classList.toggle('navigation--open');
 		}
 	});
 
@@ -61,7 +65,7 @@ document.body.onload = (function() {
 	const breakPoint = 640;
 
 	if (window.innerWidth > breakPoint) {
-		window.addEventListener("scroll", pageAnimations);
+		window.addEventListener('scroll', pageAnimations);
 	}
 
 	// Page Animations
@@ -70,35 +74,35 @@ document.body.onload = (function() {
 
 	const elementsArr = [
 		{
-			elem: document.getElementById("bars"),
+			elem: document.getElementById('bars'),
 			animation: 'skill-bars--animated',
 			single: true,
 		},
 		{
-			elem: document.getElementsByClassName("animate"),
+			elem: document.getElementsByClassName('animate'),
 			animation: 'fade-in',
 			single: false,
 		},
 		{
-			elem: document.getElementsByClassName("timeline__content"),
+			elem: document.getElementsByClassName('timeline__content'),
 			animation: 'fade-in-right',
 			single: false,
 		},
 		{
-			elem: document.getElementById("skills-wrapper"),
+			elem: document.getElementById('skills-wrapper'),
 			animation: 'special-skills__wrapper--animated',
 			single: true,
 		},
 		{
-			elem: document.getElementsByClassName("project"),
+			elem: document.getElementsByClassName('project'),
 			animation: 'fade-in-left',
 			single: false,
 		},
 		{
-			elem: document.getElementById("wrapper"),
+			elem: document.getElementById('wrapper'),
 			animation: 'contacts-wrapper--animated',
 			single: true,
-		}
+		},
 	];
 
 	function pageAnimations() {
@@ -106,7 +110,8 @@ document.body.onload = (function() {
 			if (!animationObj.single) {
 				checkPosition(animationObj.elem, animationObj.animation);
 			} else {
-				const posFromTopSkillBar = animationObj.elem.getBoundingClientRect().top;
+				const posFromTopSkillBar = animationObj.elem.getBoundingClientRect()
+					.top;
 
 				if (posFromTopSkillBar + buffer - windowHeight <= 0) {
 					animationObj.elem.classList.add(animationObj.animation);
