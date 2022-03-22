@@ -16,7 +16,7 @@
 	padding-bottom: 20px;
 
 	&::before {
-		content: '';
+		content: "";
 		position: absolute;
 		left: calc(57px / 2);
 		top: 24px;
@@ -65,7 +65,7 @@
 		padding: 20px 0;
 
 		&::after {
-			content: '';
+			content: "";
 			position: absolute;
 			left: 0;
 			top: 5px;
@@ -78,6 +78,10 @@
 
 	&__text {
 		line-height: 1.5;
+
+		h5 {
+			font-weight: 600;
+		}
 	}
 
 	&__note {
